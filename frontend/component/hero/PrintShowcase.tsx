@@ -2,6 +2,7 @@ import Link from "next/link";
 import SafeImage from "@/component/utils/SafeImage";
 import { ImageOff } from "lucide-react";
 import { services } from "@/data/services"; // <-- import the data
+import Badge from "../utils/Badge";
 
 function PrintShowcase() {
   return (
@@ -12,6 +13,7 @@ function PrintShowcase() {
           <div key={catIndex}>
             {/* Category Title */}
             <div className="mb-12">
+              {/* <Badge text={category.title} color="gradient" /> */}
               <h2 className="text-3xl md:text-4xl font-bold text-white inline-block">
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   {category.title}
@@ -49,11 +51,7 @@ function PrintShowcase() {
                         </div>
                       )}
                     </div>
-
-                    <div className="absolute top-4 left-4 bg-gradient-to-r from-primary to-secondary text-black px-4 py-1 text-sm font-semibold rounded-md shadow-lg">
-                      {item.title}
-                    </div>
-
+              <Badge text={item.title} color="secondary" className="absolute top-2 right-2 rounded-md" />
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition duration-500" />
                   </div>
                 </Link>

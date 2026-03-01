@@ -61,7 +61,7 @@ export function RecentWork() {
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center text-center px-4">
                 <div>
-                  <h3 className="text-lg font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  <h3 className="text-lg font-semibold bg-secondary text-black">
                     {item.title}
                   </h3>
                   <p className="text-white/60 text-sm mt-2 capitalize">

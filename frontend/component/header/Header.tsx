@@ -58,12 +58,18 @@ const Header: FC = () => {
         </div>
 
         {/* CTA Button */}
-        <button
+        <Link
           data-cursor="print"
-          className="text-sm font-label font-semibold border border-primary px-4 py-2  transition-colors"
+          href="/contact"
+          className="hover:text-accent transition-colors"
         >
-          Book Now
-        </button>
+          <button
+            data-cursor="print"
+            className="text-sm font-label font-semibold border border-primary px-4 py-2  transition-colors"
+          >
+            Book Now
+          </button>
+        </Link>
       </div>
     </header>
   );

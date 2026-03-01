@@ -51,8 +51,10 @@ export function CTASection() {
           
           {/* Primary Button */}
           <Link
+          data-cursor="print"
+
             href="/contact"
-            className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-black font-semibold rounded-md hover:opacity-90 transition-opacity duration-300"
+            className="px-8 py-4 bg-secondary from-primary to-secondary text-black font-semibold  hover:opacity-90 transition-opacity duration-300"
           >
             Request a Quote
           </Link>
